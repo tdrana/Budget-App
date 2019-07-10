@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Software, App, Creative,Design,mordan">
+        <meta name="description" content="Nippon">
+        <meta name="author" content="cosmos-themes">
+
+        <title>Budget App</title>
+
+        <!-- favicon -->
+        <link href="#" rel="icon" type="image/png">
+       <!-- ========== Google Fonts ========== -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+        <!--Font Awesome css-->
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+
+
+        <!--Site Main Style css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+      <div class="container">
+           <div class="row mt-5 ">
+               <div class="col-lg-12">
+                       <h2 class="budget-title">Budget App</h4>
+                        <hr>
+               </div>
+           </div>
+           <div class="row mt-3">
+               <div class="col-lg-4">
+                   <!-- Budget Feedback -->
+                   <div class="budget-feedback alert alert-danger text-capitalize">Budget Feedback</div>
+                   <!-- Budget Form -->
+                   <div class="budget-form border border-success p-3 rounded ">
+                        <form class="budget-form" id="budget-form">
+                            <div class="form-group">
+                              <label for="" class="text-capitalize font-weight-bold mb-3">Please Enter Your Budget</label>
+                              <input type="number"
+                                class="form-control budget-input" name="" id="budget-input" placeholder="">
+
+                                <button id="budget-submit" type="submit" class="btn btn-outline-success mt-3">Calculate</button>
+                            </div>
+                        </form>
+                   </div>
+
+                    <!-- Budget Feedback -->
+                   <div class="expenses-feedback alert alert-danger text-capitalize">Expenses Feedback</div>
+                   <div class="expence-form mt-3 border border-danger p-3 rounded">
+                    <form id="expense-form">
+                        <div class="form-group">
+                            <label for="" class="text-capitalize font-weight-bold mb-3">Please Enter Expense</label>
+                            <input type="text"
+                              class="form-control" id="expense-name-input" placeholder="">
+                              <label for="" class="text-capitalize font-weight-bold mb-3 mt-3">Please Enter Expense Amount</label>
+                              <input type="number"
+                                class="form-control" id="expense-amount-input" placeholder="">
+                                <button type="submit" class="btn btn-outline-danger mt-3" id="expense-btn">Add Expense</button>
+                          </div>
+                    </form>
+                   </div>
+               </div>
+               <div class="col-lg-6 mx-auto">
+                     <div class="calculate-money mb-5">
+                        <div class="row">
+                            <div class="col-4 budget">
+                                <h4>Budget</h4>
+                                <i class="fas fa-money-check-alt"></i>
+                                <h6 id="budget-amount">0</h6>
+                            </div>
+                            <div class="col-4 expense">
+                             <h4>Expense</h4>
+                             <i class="far fa-credit-card"></i>
+                             <h6 id="expense-amount">0</h6>
+                            </div>
+                            <div class="col-4 balance">
+                             <h4>Balance</h4>
+                             <i class="fas fa-dollar-sign"></i>
+                             <h6 id="balance-amount" class="showBlack">0</h6>
+                            </div>
+                        </div>
+                     </div>
+                      <!-- expense list -->
+                      <div class="expense-list" id="expense-list">
+
+                          <div class="expense-list__info d-flex justify-content-between text-capitalize">
+                          <h5 class="list-item">expense title</h5>
+                          <h5 class="list-item">expense value</h5>
+                          <h5 class="list-item"></h5>
+                          </div>
+                          <hr>
+    
+                        </div>
+
+               </div>
+           </div>
+      </div>
+        <!--Jquery js-->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <!--Bootstrap js-->
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>
